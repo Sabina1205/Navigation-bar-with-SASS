@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+
+$primary-color: whitesmoke;
+$font-color: #194569;
+$font: Just Another Hand;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: $primary-color;
+
+    .navbar {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        width: 319px;
+        display: table;
+        margin: 0 auto;
+        transform: translateY(-50%);
+
+        li {
+            position: relative;
+            width: 33.333%;
+            display: table-cell;
+            text-align: center;
+            color: $font-color;
+            font-family: Verdana;
+            font-weight: bold;
+            padding: 10px 25px;
+            cursor: pointer;
+
+            &:hover {
+                color: #ebe534;
+                text-transform: uppercase;
+                transform: translate(10px, 10px) rotate(20deg);
+                transition: 0.2s ease-in;
+                letter-spacing: 8px;
+                font-family: $font;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+ 
